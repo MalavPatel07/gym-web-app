@@ -1,0 +1,63 @@
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #e31c25;
+    text-align: center;
+}
+
+.hero-text blockquote {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text blockquote footer {
+    color: #dcdcdc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.blockquote {
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Montserrat-bold";
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Montserrat-light";
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 5% 0;
+}
+
+@media (max-width:1028px) {
+    .blockquote {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:935px) {
+    .blockquote {
+        font-size: 0.8rem;
+    }
+}

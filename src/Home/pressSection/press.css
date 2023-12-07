@@ -1,0 +1,26 @@
+h3 {
+    font-family: "Montserrat-bold";
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Montserrat-light";
+}
+
+#press {
+    background-color: #e31c25;
+    text-align: center;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 30px;
+}
+
+@media (max-width:1028px) {
+    .press-img {
+        width: 15%;
+        margin: 5px;
+    }
+}
