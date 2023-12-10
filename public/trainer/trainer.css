@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.column-spacing {
+    margin-right: 50px;
+}
+
+.navbar-dark.bg-black {
+    background-color: #000;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    color: #ffffff;
+    border-color: #e31c25;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e31c25;
+    border-color: #ff3030;
+}
+
+.btn-register {
+    margin-left: 8px;
+}
+
+/* Css for members */
+
+.member-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px; /* Adds padding inside the card */
+    background-color: white; /* Card background */
+    color: black; /* Text color */
+    border: 2px solid lightgrey; /* Red border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.member-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0 5px 15px black; /* Red shadow on hover */
+}
+
+.card-title {
+    color: #e31c25; /* Red color for titles */
+}
+
+.member-card, .card-title, .card-text {
+    font-family: 'Arial', sans-serif; /* Choose a font that suits your design */
+}
+
+.card-link, .card-link:hover, .card-link:focus {
+    text-decoration: none;
+    color: inherit; /* Ensures text inside card doesn't change color */
+}
+
+.card-link:hover .member-card,
+.card-link:focus .member-card {
+    color: inherit; /* Prevents text color change inside card on hover and focus */
+}
+
+.card-link .card-title, 
+.card-link .card-text {
+    color: inherit; /* Ensures text color for specific elements inside card */
+}
+
+.margin-right-0 {
+    margin-right: 0px;
+}

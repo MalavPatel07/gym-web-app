@@ -1,0 +1,35 @@
+.member-card {
+    display: flex;
+    align-items: center;
+    width: 270px; /* Set the width to your desired value */
+    max-height: 200px; /* Set the max-height to your desired value */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden; /* Hide any content that overflows the box */
+}
+
+.member-card img {
+    width: 80px; /* Set the width of the circular image */
+    height: 80px; /* Set the height of the circular image */
+    object-fit: cover;
+    border-radius: 50%; /* Apply a circular shape to the image */
+    margin-right: 15px; /* Add margin for spacing between the image and text */
+}
+
+.member-card .card-body {
+    flex-grow: 1; /* Allow the card-body to grow and take up remaining space */
+}
+
+.member-card .card-text {
+    margin-bottom: 0.25rem;
+}
+
+.wd-dashboard-grid .col {
+    width: 300px;
+}
+
+.wd-dashboard {
+    width: 300px;
+}
