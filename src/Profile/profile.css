@@ -1,0 +1,121 @@
+.profile {
+    background-color: #f8f9fa;
+    font-family: 'Arial' !important;
+}
+
+.ml-2 {
+    margin-left: 20px;
+}
+
+.column-spacing {
+    margin-right: 50px;
+}
+
+.navbar-dark.bg-black {
+    background-color: #000;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.btn-outline-danger {
+    color: #ffffff;
+    border-color: #e31c25;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e31c25;
+    border-color: #ff3030;
+}
+
+.btn-register {
+    margin-left: 8px;
+}
+
+.profile h2 {
+    font-family: 'Arial';
+    font-size: 2.5rem;
+    color: black;
+    margin: 0 5% 0;
+}
+
+.memberprofile{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.userdetails{
+    margin-left: 30px;
+}
+
+.trainerdetails{
+    margin-right: 0px;
+}
+
+.welcomemsg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.adminprofile{
+    margin-top: 20px;
+}
+
+.member-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px; 
+    background-color: white; 
+    color: black; 
+    border: 2px solid lightgrey; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.member-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px black; 
+}
+
+.card-title {
+    color: #e31c25; 
+}
+
+.member-card, .card-title, .card-text {
+    font-family: 'Arial', sans-serif; 
+}
+
+.card-link, .card-link:hover, .card-link:focus {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.card-link:hover .member-card,
+.card-link:focus .member-card {
+    color: inherit; 
+}
+
+.card-link .card-title, 
+.card-link .card-text {
+    color: inherit; 
+}
+
+.no-text-decoration {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.no-text-decoration:hover, .no-text-decoration:focus {
+    text-decoration: none; 
+}
+
+.hover-popup:hover {
+    transform: scale(1.05); 
+    background-color: #f0f0f0;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out; 
+}
+
