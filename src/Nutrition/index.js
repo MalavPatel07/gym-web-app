@@ -5,6 +5,7 @@ import './nutrition.css';
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { useSelector } from 'react-redux';
 const REACT_APP_BASE = process.env.REACT_APP_BASE;
+const REACT_APP_BASE_NUTRITION_API = process.env.REACT_APP_BASE_NUTRITION_API;
 
 function Nutrition() {
     const userDetails = useSelector((state) => state.user.userDetails);
@@ -25,7 +26,7 @@ function Nutrition() {
             try {
                 const response = await axios.get('https://api.spoonacular.com/mealplanner/generate', {
                     params: {
-                        apiKey: '022faf3719b04586a2ea7ee1ae9121a1'
+                        apiKey: REACT_APP_BASE_NUTRITION_API
                     }
                 });
                 setMealPlan(response.data.week);
