@@ -1,0 +1,112 @@
+.loginPageBody {
+    background-color: #121212!important;
+    font-family: "Montserrat", sans-serif;
+}
+
+.m-down {
+    padding-top: 160px;
+}
+
+.loginPageCard {
+    border: none;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.loginregister.form-control:disabled,
+.form-control[readonly] {
+    background-color: #1e1e1e;
+    opacity: 1;
+}
+
+.loginregister::placeholder {
+    font-size: 0.95rem;
+}
+
+.btn-outline-red {
+    color: black;
+    border-color: #e31c25;
+    background-color: #e31c25;
+}
+
+.loginregister.form-control {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+    box-shadow: none;
+}
+
+.loginregister .form-control {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+    box-shadow: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.loginregister::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.loginregister .form-select {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+}
+
+.loginregister .form-control:hover {
+    background-color: #333;
+    color: white;
+}
+
+.loginregister .form-control:focus {
+    background-color: #333;
+    border-color: #e31c25;
+    color: white;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(227, 28, 37, 0.6);
+}
+
+.loginregister.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="%23bbb" viewBox="0 0 16 16"><path d="M1.5 6L8 12.5L14.5 6H1.5z"/></svg>') no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+.btn-outline-red {
+    background-color: #333;
+    color: white;
+}
+
+.btn-outline-red:hover {
+    background-color: #e31c25;
+}
+
+.form-control[type="file"]::-webkit-file-upload-button {
+    background-color: #e31c25;
+    color: white;
+    border: none;
+    padding: .375rem .75rem;
+    margin: 0;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.form-control[type="file"]::file-selector-button {
+    background-color: #e31c25;
+    color: white;
+    padding: .375rem .75rem;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
