@@ -1,0 +1,103 @@
+.nutrition-container {
+    margin: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.day-container {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+ 
+.meals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+ 
+.meal-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+.meal-card h3 {
+    margin-top: 0;
+    color: #e31c25;
+}
+ 
+.meal-card a {
+    color: #06c;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+.meal-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+ 
+.nutrients-table {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+ 
+.nutrients-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+ 
+.nutrients-table th,
+.nutrients-table td {
+    text-align: left;
+    padding: 12px 15px;
+    /* border-bottom: 1px solid #e31c25; */
+}
+ 
+.nutrients-table th:last-child,
+.nutrients-table td:last-child {
+    border-bottom: none;
+}
+ 
+.nutrients-table th {
+    background-color: #dfdfdf;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+ 
+.day-meal {
+    color: black;
+}
+ 
+ 
+.meal-card {
+    border: 1px solid #e31c25;
+    border-radius: 8px;
+    padding: 10px;
+    flex-grow: 0; /* Prevents the card from growing */
+    flex-shrink: 0; /* Prevents the card from shrinking */
+    flex-basis: calc(33.333% - 20px); /* Sets the base size of the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .meal-card {
+        flex-basis: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .meal-card {
+        flex-basis: 100%; /* Full width on very small screens */
+    }
+}
