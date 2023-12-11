@@ -54,7 +54,7 @@ const UserProfile = () => {
             try {
                 const response = await axios.get('https://api.spoonacular.com/mealplanner/generate', {
                     params: {
-                        apiKey: 'a74c93bccfbe4599897a09b95bcad92c',
+                        apiKey: REACT_APP_BASE_NUTRITION_API,
                         ids: Array.from(uniqueFavoriteMealIds).join(','),
                     },
                 });
