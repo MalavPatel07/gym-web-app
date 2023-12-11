@@ -58,6 +58,11 @@ const UserProfile = () => {
                         ids: Array.from(uniqueFavoriteMealIds).join(','),
                     },
                 });
+
+                if (!userDetails?.favourites?.length) {
+                    console.log('No favourite meals to fetch');
+                    return;
+                }
     
                 console.log("API Response:", response.data.week); 
     
