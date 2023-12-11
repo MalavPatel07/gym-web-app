@@ -18,7 +18,11 @@
     gap: 20px;
     margin-bottom: 20px;
 }
- 
+
+.h2 {
+    color: #1e1e1e;
+}
+
 .meal-card {
     border: 1px solid #e31c25;
     border-radius: 8px;
