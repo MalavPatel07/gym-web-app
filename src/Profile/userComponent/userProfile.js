@@ -44,6 +44,48 @@ const UserProfile = () => {
     const handleInputChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });
     };
+
+    const uniqueFavoriteMealIds = new Set(userDetails.favourites);
+    const [uniqueFavoriteMeals, setUniqueFavoriteMeals] = useState([]);
+
+    useEffect(() => {
+        const fetchFavoriteMeals = async () => {
+            try {
+                const response = await axios.get('https://api.spoonacular.com/mealplanner/generate', {
+                    params: {
+                        apiKey: 'a74c93bccfbe4599897a09b95bcad92c',
+                        ids: Array.from(uniqueFavoriteMealIds).join(','),
+                    },
+                });
+    
+                console.log("API Response:", response.data.week); 
+    
+                let fetchedMeals = [];
+                Object.values(response.data.week).forEach(day => {
+                    if (day.meals && day.meals.length > 0) {
+                        fetchedMeals = fetchedMeals.concat(day.meals);
+                    }
+                });
+    
+                console.log("Fetched Meals:", fetchedMeals); 
+    
+
+                let uniqueMeals = Array.from(new Set(fetchedMeals.map(meal => JSON.stringify(meal))))
+                                       .map(jsonMeal => JSON.parse(jsonMeal));
+    
+                uniqueMeals = uniqueMeals.filter(meal => userDetails.favourites.includes(meal.id));
+    
+                console.log("Filtered Unique Meals:", uniqueMeals);
+    
+                setUniqueFavoriteMeals(uniqueMeals);
+            } catch (error) {
+                console.error('Error fetching favorite meals:', error);
+            }
+        };
+    
+        fetchFavoriteMeals();
+    }, [userDetails.favourites]);
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
@@ -334,6 +376,27 @@ const UserProfile = () => {
                             ))
                         }
                     </ul>
+                </div>
+            </div>
+            <div className='row' style={{ marginLeft: 10 }}>
+                <h3>Favourite Meals</h3>
+            </div>
+            <br/>
+            <div className='row' style={{ marginLeft: 10 }}>
+                <div className='meals-container'>
+                    {uniqueFavoriteMeals.length > 0 ? (
+                        uniqueFavoriteMeals.map(meal => (
+                            <div key={meal.id} className='meal-card'>
+                                <img src={`https://spoonacular.com/recipeImages/${meal.id}-312x231.${meal.imageType}`} alt={meal.title} />
+                                <h3>{meal.title}</h3>
+                                <p>Ready in: {meal.readyInMinutes} minutes</p>
+                                <p>Servings: {meal.servings}</p>
+                                <a href={meal.sourceUrl} target='_blank' rel='noopener noreferrer'>Recipe</a>
+                            </div>
+                        ))
+                    ) : (
+                        <p>No favorite meals to display.</p>
+                    )}
                 </div>
             </div>
         </div>
