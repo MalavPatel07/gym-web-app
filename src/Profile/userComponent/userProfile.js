@@ -7,6 +7,7 @@ import { setUserActivity, setUserDetails } from '../../userSlice';
 import { Link } from 'react-router-dom';
 const REACT_APP_BASE = process.env.REACT_APP_BASE;
 
+
 const UserProfile = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const dispatch = useDispatch();
