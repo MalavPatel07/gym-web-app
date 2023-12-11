@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setUserActivity, setUserDetails } from '../../userSlice';
 import { Link } from 'react-router-dom';
 const REACT_APP_BASE = process.env.REACT_APP_BASE;
-
+const REACT_APP_BASE_NUTRITION_API = process.env.REACT_APP_BASE_NUTRITION_API;
 
 const UserProfile = () => {
     const [searchTerm, setSearchTerm] = useState('');
