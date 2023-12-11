@@ -42,8 +42,7 @@ function Footer() {
         </div>
         <div className="container border-top border-dark pt-5">
           <p className="m-0 text-center text-white">
-            &copy; <Link className="text-white font-weight-bold" to="/">Your Site Name</Link>. All Rights Reserved. Designed by
-            <a className="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            &copy; <Link className="text-white font-weight-bold" to="/">CrossFit</Link>. All Rights Reserved.
           </p>
         </div>
       </div>
