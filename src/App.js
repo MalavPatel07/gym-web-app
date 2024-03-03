@@ -38,6 +38,7 @@ function App() {
         <Routes>
           <Route element={<Layout isLoggedIn={isLoggedIn} setLoggedIn={setIsLoggedIn} userDetails={userDetails} />}>
             <Route path="/" element={<Navigate replace to="/home" />} />
+            <Route path="/trial" element={<Trial />} />
             <Route path="/home" element={<Home isLoggedIn={isLoggedIn} userDetails={userDetails}/>} />
             <Route path="/nutrition" element={<Nutrition isLoggedIn={isLoggedIn} userDetails={userDetails} />} />
             <Route path="/profile" element={<Profile userDetails={userDetails} />} />
