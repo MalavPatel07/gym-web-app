@@ -1,0 +1,30 @@
+.trial {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.trial h2, .trial h3 {
+  color: #333;
+}
+
+.trial p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.trial ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trial li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.trial li strong {
+  color: #000;
+}
+
