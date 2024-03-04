@@ -1,5 +1,6 @@
 import React from 'react';
-
+import './trial.css';
+  
 function Trial() {
   return (
     <div className="trial">
