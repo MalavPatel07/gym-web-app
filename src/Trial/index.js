@@ -4,7 +4,7 @@ import './trial.css';
 function Trial() {
   return (
     <div className="trial">
-      <h2>Welcome to our Gym Web Application Trial</h2>
+      <h2>Gym Web Application Trial</h2>
       <p>
         This Gym Web Application is a full-stack project built using React for the frontend, Node.js for the backend, and MongoDB as the database. It is designed to facilitate gym management and user interaction by categorizing users into three roles: Members, Admin, and Trainer, each with different functionalities and access levels.
       </p>
