@@ -32,9 +32,12 @@ function Navbar({ isLoggedIn, setLoggedIn }) {
                         <li className="nav-item">
                             <Link className={`${pathname.includes("home") ? "active" : ""} nav-link`} to="/">Home</Link>
                         </li>
+                        {!isLoggedIn && (<>
                         <li className="nav-item">
                             <Link className={`${pathname.includes("trial") ? "active" : ""} nav-link`} to="/trial">Trial</Link>
                         </li>
+                            </>
+                            )}
                         {isLoggedIn && (<>
                             <li className="nav-item">
                                 <Link className={`${pathname.includes("profile") ? "active" : ""} nav-link`} to="/profile">Profile</Link>
