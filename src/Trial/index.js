@@ -1,5 +1,4 @@
 import React from 'react';
-import './trial.css'; 
 
 function Trial() {
   return (
