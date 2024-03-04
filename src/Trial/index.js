@@ -1,5 +1,5 @@
 import React from 'react';
-import './Trial.css'; // Make sure to create a Trial.css file in the same directory
+import './Trial.css'; 
 
 function Trial() {
   return (
