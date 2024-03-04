@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './Layout';
 import Home from "./Home/index.js";
+import Trial from "./Trial/index.js";
 import Login from "./userAuth/login.js";
 import Register from "./userAuth/register.js";
 import Nutrition from './Nutrition/index.js';
